@@ -9,6 +9,10 @@ public class Game {
     static int pontos = 0;
     static Calcular calc;
 
+    public static void main(String[] args) {
+        Game.jogar();
+    }
+
     public static void jogar() {
         System.out.println("Informe o nível de dificuldade desejada [1, 2, 3 ou 4]: ");
         int dificuldade = Game.teclado.nextInt();
@@ -62,9 +66,5 @@ public class Game {
             System.out.println("Até a próxima!");
             System.exit(0);
         }
-    }
-
-    public static void main(String[] args) {
-        Game.jogar();
     }
 }
